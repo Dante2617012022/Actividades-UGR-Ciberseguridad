@@ -1,0 +1,396 @@
+Contexto:
+Los estudiantes se enfrentarán a un ciberataque simulado contra EcoShop, una tienda en línea que ha sufrido un ataque de phishing seguido de la infiltración de ransomware a través de una vulnerabilidad no parcheada en su infraestructura de VMware. Este ejercicio tiene como objetivo aplicar marcos normativos de ciberseguridad, como BCRA, ISO 27001, NIST CSF 2.0 y GDPR, en la gestión del incidente y recuperación, además de fortalecer la resiliencia organizativa.
+
+
+Ejercicio Integrador simulador: Gestión Avanzada de Ciberseguridad en EcoShop
+
+Objetivo del Ejercicio:
+Los estudiantes deberán utilizar los conocimientos adquiridos sobre BCRA, ISO 27001, NIST CSF 2.0 y GDPR para:
+
+Responder al ciberataque de manera inmediata.
+Planificar la recuperación de sistemas críticos y la protección de datos.
+Evaluar la relación con terceros proveedores.
+Aplicar ejercicios de resiliencia y simulación de ciberataques.
+Redactar políticas y formularios de cumplimiento ajustados a las normativas.
+Paso 1: Respuesta Inmediata al Ciberataque
+1.1 Identificación del Incidente
+
+El ataque se manifestó mediante la detección de actividad inusual en la infraestructura de VMware y la paralización del sistema de pedidos de EcoShop debido al ransomware. Trabajarán en los siguientes puntos:
+
+Análisis Forense Inicial: Utilizando herramientas de análisis como EDR (Endpoint Detection and Response) y SIEM (Security Information and Event Management), identifiquen el vector de ataque inicial y cómo se desplegó el ransomware.
+Informe de Detección Temprana: Redacten un informe técnico que describa el ataque, basándose en la función de Detectar del NIST CSF. Incluir:
+Tiempo de detección.
+Métodos utilizados para identificar el ataque.
+Activos comprometidos.
+Posibles vulnerabilidades explotadas.
+1.2 Contención y Mitigación del Incidente
+
+De acuerdo con la comunicación "A" 7266 del BCRA, desarrollen un plan de contención y mitigación inmediata:
+
+Aislamiento de Sistemas: ¿Qué sistemas deben aislarse inmediatamente para evitar la propagación del ransomware?
+Mitigación Inmediata: ¿Qué acciones proactivas deben tomarse para detener el ataque, como cortar el acceso externo, desactivar conexiones VPN y realizar snapshots de sistemas críticos para análisis forense posterior?
+Resiliencia Técnica: Propongan el uso de entornos segmentados o “air-gapped” y sistemas de control de acceso estrictos para minimizar el impacto del ataque.
+1.3 Notificación a Autoridades
+
+Con base en los requisitos del GDPR, redacten un comunicado para notificar a las autoridades competentes de protección de datos en 72 horas:
+
+Describan la naturaleza del incidente, los datos comprometidos, y las acciones tomadas hasta el momento.
+Incluir un plan de contingencia para notificar a los clientes afectados, asegurando que se les informe del compromiso de su información personal y los pasos que deben seguir.
+Paso 2: Recuperación y Resiliencia
+2.1 Restauración de Sistemas Críticos
+
+Utilizando los lineamientos del BCRA y NIST CSF 2.0, diseñen un Plan de Recuperación que contemple:
+
+Restauración desde Copias de Seguridad: ¿Cómo verificarán la integridad de las copias de seguridad antes de restaurar los sistemas críticos?
+Infraestructura VMware: Identifiquen los pasos para parchear la vulnerabilidad explotada y monitorear posibles puertas traseras instaladas durante el ataque.
+Control de Acceso y Monitoreo: Implementen políticas de segmentación de red y acceso basado en roles para limitar el acceso a los sistemas restaurados.
+2.2 Mejora Continua
+
+Posteriormente, redacten un informe de Mejora Continua en base a la fase del NIST CSF:
+
+Evaluación de Riesgos: Identifiquen los fallos que permitieron el ataque (errores en la segmentación de la red, vulnerabilidades sin parches, errores humanos) y propongan mejoras.
+Capacitación Interna: Propongan un plan de capacitación y simulacros de phishing para que el personal de EcoShop pueda reconocer ataques futuros.
+Implementación de Nuevas Herramientas de Detección: Consideren la incorporación de herramientas de ciberseguridad más robustas, como la automatización de respuestas mediante SOAR (Security Orchestration, Automation, and Response).
+Paso 3: Gestión del Incidente con Terceras Partes
+3.1 Evaluación y Gestión de Proveedores
+
+El ataque reveló vulnerabilidades en los servicios gestionados por proveedores externos. Basándose en la comunicación "A" 7777 del BCRA, diseñen un formulario de seguridad para que los proveedores de servicios cumplan con las normativas de EcoShop:
+
+Compromiso con Pruebas de Seguridad: Los proveedores deben realizar pruebas de penetración regulares y enviar informes de auditoría de seguridad.
+Protección de Datos: Incluyan cláusulas de responsabilidad por incumplimiento de seguridad, que estipulen las consecuencias en caso de comprometer datos de EcoShop o de sus clientes.
+3.2 Auditoría de Seguridad
+
+Redacten un Plan de Auditoría para evaluar a los proveedores de servicios de manera continua, ajustado a ISO 27001:
+
+Metodología de Auditoría: Describan los criterios de evaluación, como la eficacia de los controles de acceso, encriptación de datos y cumplimiento de políticas de seguridad.
+Revisión de Contratos: Los contratos deben incluir derechos de auditoría y sanciones si los proveedores no cumplen con los estándares acordados.
+Paso 4: Ejercicio de Resiliencia del NIST 2.0
+4.1 Simulación de Ciberataque y Evaluación
+
+Diseñen y coordinen un simulacro de ciberataque similar al que afectó a EcoShop. Este ejercicio debe incluir:
+
+Fase de Detección: ¿Cómo identificarían señales tempranas de una infiltración de ransomware? ¿Qué herramientas utilizarían para rastrear el acceso no autorizado a través de una vulnerabilidad de VMware?
+Fase de Respuesta Inmediata: Redacten un plan detallado para responder en tiempo real. ¿Cómo se coordinaría la respuesta entre equipos de TI, ciberseguridad y alta gerencia?
+Fase de Recuperación: Determinen si el tiempo de recuperación cumple con las expectativas del NIST CSF 2.0. ¿Cómo asegurarían que los sistemas restaurados no tengan vulnerabilidades remanentes?
+4.2 Métricas de Evaluación
+
+Utilicen las funciones de Responder y Recuperar del NIST CSF 2.0 para desarrollar métricas de evaluación que midan:
+
+Tiempo de Respuesta: Desde la detección del ataque hasta la contención.
+Eficacia de la Recuperación: Porcentaje de sistemas críticos recuperados en los primeros 48 horas.
+Impacto en la Reputación: Proyección del impacto en clientes y proveedores basado en la comunicación del incidente.
+Paso 5: Redacción de Formularios y Políticas de Cumplimiento
+5.1 Formulario de Consentimiento de Clientes (GDPR)
+
+Redacten un formulario de consentimiento para los clientes de EcoShop, siguiendo el GDPR:
+
+Recopilación y Tratamiento de Datos: Detallen cómo se recopilarán los datos y el propósito (comunicaciones de marketing, análisis de comportamiento de compra).
+Retiro del Consentimiento: Provean un método claro para que los clientes puedan retirar su consentimiento en cualquier momento.
+5.2 Política Interna de Gestión de Ciberincidentes
+
+Utilizando ISO 27001 y los lineamientos del BCRA, redacten una Política Interna de Gestión de Ciberincidentes para EcoShop:
+
+Detección y Notificación: Instrucciones para el equipo de ciberseguridad sobre cómo detectar un incidente y notificarlo a las autoridades pertinentes dentro de las 72 horas.
+Coordinación con Proveedores: Detallen cómo coordinar la respuesta en incidentes que involucren proveedores externos y terceros.
+5.3 Acuerdo de Nivel de Servicio (SLA) para Proveedores
+
+Redacten un Acuerdo de Nivel de Servicio (SLA) basado en ISO 27001 y el BCRA, que incluya:
+
+Garantías de Seguridad: Los proveedores deben comprometerse a mantener ciertos estándares de ciberseguridad, incluyendo la protección de datos, auditorías anuales y respuestas ante ciberincidentes.
+Derechos de Auditoría: Incluyan cláusulas que permitan a EcoShop realizar auditorías periódicas de los sistemas del proveedor para asegurar el cumplimiento de las normas de seguridad.
+Este ejercicio avanzado ayudará a los estudiantes a aplicar sus conocimientos en ciberseguridad en un contexto realista, abordando los desafíos que enfrentan las organizaciones modernas. A través de la simulación de un ciberataque complejo y la integración de marcos normativos internacionales (BCRA, ISO 27001, NIST CSF 2.0 y GDPR), los estudiantes no solo practicarán la gestión de incidentes y la recuperación, sino que también aprenderán a fortalecer la resiliencia operativa de una organización.
+
+Resultados Esperados del Ejercicio
+Mejor Comprensión de la Gestión de Ciberincidentes:
+
+Los estudiantes aplicarán los lineamientos del BCRA, el NIST CSF 2.0 y la ISO 27001 para la gestión eficaz de un incidente cibernético, abarcando desde la identificación hasta la notificación y recuperación.
+Habilidades en la Coordinación con Proveedores Externos:
+
+Al redactar contratos y acuerdos de nivel de servicio (SLA) para proveedores, integrando auditorías de seguridad y la supervisión del cumplimiento normativo, los estudiantes comprenderán mejor cómo gestionar relaciones con terceros.
+Desarrollo de la Resiliencia Organizacional:
+
+Los estudiantes evaluarán la ciberresiliencia de EcoShop mediante simulacros, pruebas de recuperación y la implementación de mejoras continuas para prevenir ataques futuros.
+Capacidad para Redactar Políticas y Formularios de Cumplimiento:
+
+A través de la creación de políticas de gestión de ciberincidentes, formularios de consentimiento y acuerdos con proveedores, los estudiantes desarrollarán la capacidad de integrar requisitos regulatorios en documentos operativos y contractuales, asegurando el cumplimiento de GDPR, ISO 27001 y normativas locales como las del BCRA.
+Este enfoque les permitirá a los estudiantes experimentar un entorno que imita la realidad del mundo laboral, en el que deben gestionar incidentes complejos, cumplir con múltiples marcos regulatorios y colaborar con diversos equipos y terceros para asegurar la protección de los activos de información.
+
+
+Anexo: Formularios Preventivos Basados en BCRA, ISO 27001, NIST y GDPR
+En este anexo, los estudiantes deberán desarrollar y profesionalizar formularios preventivos esenciales para la protección de datos y la seguridad de la información de EcoShop, según los marcos regulatorios BCRA, ISO 27001, NIST CSF 2.0 y GDPR. Estos formularios estarán dirigidos a clientes, proveedores y empleados para cubrir diversos aspectos de ciberseguridad y cumplimiento normativo, asegurando la protección de los activos de información en situaciones tanto operativas como incidentales.
+
+Objetivos del Anexo:
+Creación de Formularios: Definir los formularios necesarios para clientes, proveedores y empleados de EcoShop, alineados con las normativas mencionadas.
+Profundización y Profesionalización: Los estudiantes deben ampliar y perfeccionar estos formularios, enfocándose en la claridad legal, la protección de datos, la responsabilidad y la aplicabilidad práctica.
+Aplicación de Marcos Normativos: Instruir a los estudiantes en la integración de los requisitos de BCRA, ISO 27001, NIST y GDPR dentro de cada formulario, asegurando su validez regulatoria.
+1. Formularios Preventivos para Clientes (GDPR, ISO 27001)
+1.1 Formulario de Consentimiento para Tratamiento de Datos Personales (GDPR)
+
+Este formulario es clave para el cumplimiento del GDPR y permite a EcoShop tratar los datos personales de sus clientes de manera legal y transparente.
+
+Ejemplo de Formulario Inicial:
+**Formulario de Consentimiento para el Tratamiento de Datos Personales**
+
+
+
+Nombre del Cliente: _________________________
+
+Correo Electrónico: _________________________
+
+Teléfono: _________________________
+
+
+
+**Propósito del Tratamiento de Datos:**
+
+EcoShop recopila y trata sus datos personales con el fin de ofrecerle promociones personalizadas, mejorar nuestros servicios y enviarle comunicaciones comerciales. Para proceder, necesitamos su consentimiento explícito.
+
+
+
+**Marque la casilla para consentir:**
+
+[ ] Acepto recibir comunicaciones de EcoShop a través de correos electrónicos o mensajes de texto.
+
+
+
+**Derecho de Retiro del Consentimiento:**
+
+Puede retirar su consentimiento en cualquier momento contactándonos a: [email]. La revocación de su consentimiento no afectará la legalidad del tratamiento realizado antes de su retirada.
+
+
+
+Firma del Cliente: _________________________    Fecha: _________________________
+
+1.2 Ampliación del Formulario: Se les pedirá a los estudiantes que mejoren este formulario para incluir:
+
+Cláusulas sobre retención de datos y la transferencia de datos a terceros.
+Garantías de derechos adicionales del GDPR, como el derecho a rectificación, supresión y portabilidad de los datos.
+Lenguaje claro para evitar ambigüedades legales.
+2. Formularios Preventivos para Proveedores (BCRA, ISO 27001)
+2.1 Acuerdo de Nivel de Servicio (SLA) para Proveedores (ISO 27001, BCRA)
+
+Este formulario formaliza los acuerdos de seguridad y cumplimiento que EcoShop exigirá a sus proveedores externos, especialmente en el manejo de datos críticos y procesos tecnológicos.
+
+Ejemplo de Formulario Inicial:
+**Acuerdo de Nivel de Servicio (SLA) entre EcoShop y [Proveedor]**
+
+
+
+Fecha de Vigencia: _______________    Duración del Acuerdo: _______________
+
+
+
+**1. Objetivo:**
+
+Este acuerdo tiene como objetivo definir los estándares de seguridad de la información y las obligaciones que [Proveedor] debe cumplir en sus servicios hacia EcoShop.
+
+
+
+**2. Compromisos de Seguridad:**
+
+[Proveedor] se compromete a implementar y mantener controles de seguridad que incluyan:
+
+- Políticas de control de acceso (ISO 27001).
+
+- Pruebas regulares de penetración y auditorías de seguridad semestrales.
+
+- Encriptación de datos sensibles tanto en tránsito como en reposo.
+
+
+
+**3. Cumplimiento Normativo:**
+
+[Proveedor] se compromete a cumplir con las siguientes normativas:
+
+- Normativas de seguridad de la información según ISO 27001.
+
+- Requisitos del Banco Central de la República Argentina (BCRA), Comunicación "A" 7777.
+
+- Protección de datos personales conforme al GDPR y regulaciones locales.
+
+
+
+**4. Incidentes de Seguridad:**
+
+En caso de un incidente de seguridad que comprometa datos de EcoShop, [Proveedor] notificará a EcoShop en un plazo máximo de 24 horas y tomará medidas correctivas inmediatas.
+
+
+
+**Firma del Proveedor:** _________________________    **Firma de EcoShop:** _________________________
+
+2.2 Ampliación del Formulario:
+
+Los estudiantes deberán profundizar este SLA añadiendo:
+Responsabilidades claras en incidentes de seguridad, indicando sanciones por incumplimiento.
+Términos de auditoría externa y revisión continua de la seguridad por parte de EcoShop.
+Políticas de resiliencia tecnológica y continuidad del negocio exigidas por el BCRA.
+3. Formularios Preventivos para Empleados (ISO 27001, NIST CSF)
+3.1 Acuerdo de Confidencialidad y Uso de la Información (ISO 27001, NIST)
+
+Este formulario garantiza que los empleados de EcoShop comprendan y respeten las políticas de seguridad de la información, previniendo posibles filtraciones de datos o accesos no autorizados.
+
+Ejemplo de Formulario Inicial:
+**Acuerdo de Confidencialidad y Seguridad de la Información**
+
+
+
+Nombre del Empleado: _________________________
+
+Cargo: _________________________
+
+
+
+**Cláusulas de Confidencialidad:**
+
+- El empleado reconoce que durante el desempeño de sus funciones en EcoShop, tendrá acceso a información confidencial y sensible. Esta información no podrá ser divulgada ni utilizada para fines distintos a los permitidos por EcoShop.
+
+- Cualquier violación de la confidencialidad será tratada de acuerdo con las políticas internas y la legislación vigente.
+
+
+
+**Acceso a Sistemas:**
+
+- El empleado se compromete a utilizar sus credenciales de acceso de manera segura, y a no compartirlas con terceros.
+
+- El acceso a los sistemas será limitado y basado en las políticas de control de acceso de EcoShop, alineadas con **ISO 27001** y **NIST CSF**.
+
+
+
+**Aceptación de Responsabilidades:**
+
+El empleado acepta cumplir con las políticas de seguridad de la información de EcoShop, incluyendo el uso adecuado de recursos tecnológicos y la participación en capacitaciones sobre ciberseguridad.
+
+
+
+Firma del Empleado: _________________________    Fecha: _________________________
+
+3.2 Ampliación del Formulario:
+
+Los estudiantes deberán añadir:
+Secciones sobre responsabilidad en el manejo de datos personales de clientes y proveedores.
+Cláusulas relacionadas con la gestión de accesos privilegiados y la utilización de autenticación multifactor.
+Políticas de retención de datos y destrucción segura de la información al finalizar la relación laboral.
+Tareas para los Estudiantes
+Ampliación y Perfeccionamiento de Formularios:
+
+Los estudiantes deben profundizar cada uno de los formularios propuestos, ajustando los términos legales y añadiendo elementos preventivos basados en los marcos normativos (BCRA, ISO 27001, NIST, GDPR).
+Deben profesionalizar los formularios con un lenguaje claro, específico y acorde a estándares legales internacionales, garantizando que EcoShop cumpla con todas las normativas aplicables.
+Ejercicio de Simulación:
+
+A partir de los formularios mejorados, los estudiantes deberán realizar un simulacro en el que simulen la solicitud de un cliente para acceder a sus datos o la negociación de un SLA con un proveedor. En estos ejercicios, deben prever posibles conflictos o problemas derivados de un incidente cibernético y cómo los formularios contribuyen a la prevención y mitigación.
+Evaluación de Riesgos:
+
+Los estudiantes deben realizar una evaluación de riesgos sobre cómo el uso adecuado de estos formularios prevendría incidentes futuros. Deben redactar un informe final que evalúe el impacto potencial de no contar con formularios preventivos adecuados y cómo su implementación mejora la postura de seguridad de EcoShop.
+Conclusión
+Este anexo introduce a los estudiantes a la creación de formularios preventivos esenciales en ciberseguridad, basados en los estándares normativos de BCRA, ISO 27001, NIST y GDPR. El ejercicio les permitirá adquirir habilidades prácticas en la redacción de documentos regulatorios, gestión de riesgos y relaciones con terceros. Además, los estudiantes fortalecerán su capacidad para aplicar normas internacionales de seguridad en contextos empresariales reales, contribuyendo a la mejora continua de la resiliencia cibernética en organizaciones modernas.
+
+Herramientas
+Para el diseño, gestión y manejo de los formularios preventivos en ciberseguridad, existen diversas herramientas que permiten automatizar, asegurar y gestionar la información de manera eficiente, cumpliendo con los marcos regulatorios como BCRA, ISO 27001, NIST CSF y GDPR. A continuación, te sugiero algunas herramientas que pueden ser útiles para los estudiantes al trabajar en el diseño de estos formularios:
+
+1. JotForm
+Descripción: JotForm es una herramienta de formularios en línea que permite crear formularios personalizados y almacenar los datos de manera segura. Ofrece funciones avanzadas como encriptación de datos, autenticación multifactor y cumplimiento con GDPR.
+Aplicación: Ideal para crear formularios de consentimiento de clientes, acuerdos con proveedores y formularios de cumplimiento. Los datos pueden integrarse fácilmente en sistemas de gestión de seguridad.
+Cumplimiento: GDPR, ISO 27001.
+Ventaja: Interface amigable con plantillas predefinidas para formularios legales.
+2. OneTrust
+Descripción: OneTrust es una plataforma de gestión de privacidad, riesgo y cumplimiento que facilita la gestión de consentimientos de clientes, la gestión de proveedores, y la creación de políticas y acuerdos internos. Su software es altamente reconocido por su enfoque en la privacidad de datos.
+Aplicación: Útil para gestionar el cumplimiento de GDPR en formularios de clientes y políticas internas. Los acuerdos con proveedores pueden gestionarse y auditarse de forma centralizada.
+Cumplimiento: GDPR, ISO 27001, NIST CSF.
+Ventaja: Integración con sistemas de seguridad y privacidad para gestionar riesgos de manera proactiva.
+3. DocuSign
+Descripción: DocuSign es una herramienta de firma electrónica que permite la creación, gestión y firma de documentos en línea de manera segura. Cumple con las normativas internacionales de seguridad y privacidad, permitiendo auditar todas las transacciones.
+Aplicación: Ideal para acuerdos de nivel de servicio (SLA), formularios de confidencialidad para empleados, y consentimientos de clientes. Garantiza la autenticación y la integridad de los formularios.
+Cumplimiento: ISO 27001, NIST CSF, GDPR.
+Ventaja: Firmas legalmente vinculantes y registro de auditoría para cumplir con las normativas de seguridad.
+4. FormAssembly
+Descripción: FormAssembly es una plataforma de recopilación de datos que se centra en la seguridad, el cumplimiento y la integración con sistemas empresariales. Ofrece encriptación de extremo a extremo y almacenamiento seguro en la nube.
+Aplicación: Útil para la creación de formularios de consentimiento de clientes, contratos de proveedores, y auditorías de seguridad para empleados. Integra con sistemas CRM y ERP para manejar datos de manera fluida.
+Cumplimiento: GDPR, ISO 27001, NIST CSF.
+Ventaja: Fuerte enfoque en la gestión de datos sensibles y compatibilidad con Salesforce.
+5. Compliance 360
+Descripción: Compliance 360 es una plataforma de gestión de cumplimiento diseñada para ayudar a las organizaciones a cumplir con regulaciones y gestionar riesgos. Permite diseñar formularios de auditoría, gestionar documentos y rastrear incidentes de cumplimiento.
+Aplicación: Perfecta para crear formularios de auditoría de seguridad y gestionar contratos con proveedores bajo los lineamientos de BCRA e ISO 27001.
+Cumplimiento: BCRA, ISO 27001, NIST CSF.
+Ventaja: Gestión centralizada de riesgos y cumplimiento, con seguimiento de incidentes y auditorías.
+6. VeraCrypt
+Descripción: VeraCrypt es una herramienta de encriptación de datos que permite almacenar y asegurar información confidencial de manera segura. Aunque no está diseñado específicamente para la creación de formularios, es muy útil para almacenar de forma segura los datos recogidos en los formularios.
+Aplicación: Puede utilizarse para almacenar formularios de consentimiento y acuerdos con proveedores, asegurando que los datos estén encriptados y accesibles solo por personal autorizado.
+Cumplimiento: ISO 27001, GDPR.
+Ventaja: Encriptación sólida y fácil de usar para proteger datos sensibles.
+7. Google Workspace (Google Forms y Google Drive Enterprise)
+Descripción: Google Forms es una herramienta simple y eficaz para crear formularios en línea, y Google Drive Enterprise ofrece funciones avanzadas de seguridad y control de acceso. Google Drive Enterprise cumple con los requisitos de GDPR y ISO 27001, permitiendo almacenar y gestionar los formularios de manera segura.
+Aplicación: Los formularios de consentimiento de clientes, contratos de empleados y proveedores pueden crearse y almacenarse en Google Drive con controles de acceso estrictos y auditorías.
+Cumplimiento: GDPR, ISO 27001.
+Ventaja: Facilidad de uso, integración con otras herramientas empresariales, y controles avanzados de seguridad.
+8. Vormetric Data Security Platform (Thales)
+Descripción: Vormetric es una herramienta avanzada de gestión de seguridad de datos que ayuda a las organizaciones a proteger la información almacenada en la nube o en entornos locales. Ofrece una plataforma integral para proteger archivos, carpetas, y aplicaciones con acceso controlado y monitoreo.
+Aplicación: Útil para gestionar el almacenamiento seguro de formularios confidenciales de empleados, proveedores y clientes. Ofrece controles granulares sobre quién puede acceder a los datos y en qué condiciones.
+Cumplimiento: BCRA, ISO 27001, GDPR.
+Ventaja: Enfoque en la protección de datos estructurados y no estructurados.
+9. ZenGRC
+Descripción: ZenGRC es una plataforma de gestión de riesgos y cumplimiento que permite a las organizaciones automatizar los controles de cumplimiento y gestionar formularios y auditorías para asegurar que todos los procesos cumplan con las normativas.
+Aplicación: Ideal para gestionar la documentación regulatoria y formularios de auditoría interna bajo ISO 27001 y BCRA.
+Cumplimiento: ISO 27001, NIST CSF, BCRA.
+Ventaja: Automatización de controles y gestión centralizada de formularios y políticas de cumplimiento.
+10. Confluence (Atlassian)
+Descripción: Confluence es una herramienta colaborativa para gestionar documentos, formularios y procesos empresariales, con la capacidad de controlar versiones y realizar auditorías de cambios. Puede integrarse con Jira para la gestión de incidentes.
+Aplicación: Ideal para la creación de manuales de políticas internas, formularios de ciberseguridad y seguimiento de incidentes de seguridad.
+Cumplimiento: ISO 27001, NIST CSF, GDPR.
+Ventaja: Herramienta colaborativa con capacidad de seguimiento y auditoría de documentos.
+Conclusión:
+Estas herramientas no solo facilitan el diseño y la gestión de formularios relacionados con la ciberseguridad, sino que también aseguran el cumplimiento normativo y protegen los datos de manera proactiva. Al integrar soluciones como OneTrust para la gestión de privacidad, FormAssembly para la recopilación segura de datos, y DocuSign para la firma electrónica, los estudiantes y profesionales pueden automatizar y robustecer la protección de información, alineándose con los requisitos de BCRA, ISO 27001, NIST CSF y GDPR.
+
+Herramientas Open Source para el Diseño y Manejo de Formularios en Ciberseguridad
+Form.io
+
+Descripción: Form.io es una plataforma open source que permite crear formularios complejos y gestionar flujos de trabajo. Permite a los desarrolladores crear formularios web y aplicaciones de manera eficiente, integrándose con APIs.
+Aplicación: Ideal para diseñar formularios de consentimiento de clientes y auditorías. Proporciona integración con sistemas backend para almacenamiento seguro de datos.
+Ventaja: Ofrece flexibilidad en el diseño y manejo de datos, además de ser compatible con múltiples tecnologías.
+JotForm (Versión Open Source)
+
+Descripción: Aunque JotForm es principalmente un servicio comercial, tiene una opción de código abierto para usuarios que deseen implementarlo en sus propios servidores.
+Aplicación: Permite crear formularios personalizados, gestionar datos y facilitar el cumplimiento normativo.
+Ventaja: Proporciona una plataforma robusta y familiar para quienes han usado JotForm anteriormente.
+LibreOffice
+
+Descripción: LibreOffice es una suite de oficina open source que incluye herramientas para crear documentos, hojas de cálculo y formularios. Su componente "Base" permite la creación de formularios para la gestión de bases de datos.
+Aplicación: Útil para crear formularios de auditoría, documentos de política de seguridad y acuerdos de confidencialidad.
+Ventaja: Muy accesible y fácil de usar para quienes están familiarizados con herramientas de oficina.
+Google Forms (Con Google Apps Script)
+
+Descripción: Google Forms permite crear formularios en línea fácilmente. Aunque no es completamente open source, su uso junto con Google Apps Script permite personalizar la funcionalidad y adaptarlo a necesidades específicas.
+Aplicación: Ideal para la recolección de consentimientos de clientes y formularios de evaluación de riesgos.
+Ventaja: Fácil de usar y con integración directa a otras herramientas de Google.
+KoboToolbox
+
+Descripción: KoboToolbox es una plataforma open source diseñada para la recopilación de datos en entornos difíciles. Permite crear formularios móviles y en línea para la recolección de datos.
+Aplicación: Puede ser utilizada para encuestas y recopilación de datos de seguridad, así como para auditar la seguridad de la información.
+Ventaja: Muy efectiva en entornos de campo, ofrece soporte offline.
+Apache NiFi
+
+Descripción: Apache NiFi es una herramienta de integración de datos que permite automatizar el flujo de datos entre sistemas. Proporciona una interfaz gráfica para diseñar flujos de trabajo, incluida la recopilación y el manejo de datos a través de formularios.
+Aplicación: Ideal para gestionar datos sensibles y flujos de información entre diferentes sistemas, asegurando que se cumplan los requisitos de privacidad.
+Ventaja: Alto grado de personalización y control sobre la integración de datos.
+Redmine
+
+Descripción: Redmine es un sistema de gestión de proyectos open source que incluye capacidades para crear formularios personalizados y gestionar información. Permite el seguimiento de problemas, tareas y la gestión de documentación.
+Aplicación: Útil para formularios de seguimiento de incidentes de ciberseguridad y auditorías.
+Ventaja: Fuerte capacidad de personalización y gestión de proyectos.
+Odoo
+
+Descripción: Odoo es un conjunto de aplicaciones empresariales que incluye módulos para CRM, gestión de proyectos, y más. Su módulo de "Form Builder" permite crear formularios personalizados.
+Aplicación: Se puede utilizar para la gestión de relaciones con clientes, formularios de auditoría y más.
+Ventaja: Todo en uno para la gestión empresarial y fácil integración con otras funcionalidades de Odoo.
+Mautic
+
+Descripción: Mautic es una herramienta de automatización de marketing open source que permite la creación de formularios web y la gestión de campañas de marketing. Aunque su enfoque principal es el marketing, se pueden utilizar los formularios para recopilar datos de clientes de manera segura.
+Aplicación: Útil para la recolección de datos de consentimiento y la gestión de relaciones con clientes.
+Ventaja: Potente en la recopilación de datos y análisis de comportamiento de usuarios.
+Nextcloud
+
+Descripción: Nextcloud es una plataforma de almacenamiento en la nube open source que permite la colaboración y el intercambio de archivos de manera segura. Tiene características para gestionar documentos y formularios.
+Aplicación: Se puede usar para almacenar formularios de consentimiento y documentos relacionados con la seguridad de datos.
+Ventaja: Alta seguridad y control sobre el almacenamiento de datos.
+Conclusión
+Las herramientas open source mencionadas ofrecen soluciones efectivas para la creación y gestión de formularios en ciberseguridad. Al permitir a las organizaciones personalizar y controlar su entorno, estas herramientas contribuyen a cumplir con normativas como BCRA, ISO 27001, NIST y GDPR sin incurrir en altos costos de licencia. Al incorporar estas soluciones, EcoShop podrá fortalecer su postura de ciberseguridad y garantizar la protección de la información crítica.
+

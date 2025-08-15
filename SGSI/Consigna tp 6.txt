@@ -1,0 +1,76 @@
+Trabajo práctico integrador final de la materia
+Requisitos de finalización
+Apertura: miércoles, 23 de octubre de 2024, 00:00
+Cierre: jueves, 14 de noviembre de 2024, 23:59
+Este trabajo final de la materia deberán realizarlo todos los estudiantes que hayan rendido el parcial, independientemente de la nota. Quienes hayan promovido contarán con un "presente" mas en la materia y sumarán nota conceptual (en el caso de que los estudiantes ya cuenten con los presentes suficientes pueden optar por no hacerlo, renunciando también de este modo a la nota conceptual). Importante: quienes hayan sacado 7 y aprueben este trabajo con 8 o más, tienen la chance de promocionar la materia, esto es, no rendir final. Quienes hayan sacado una nota inferior a 6 pueden obtener el estado de regular. Este trabajo no es supletorio del parcial, esto es, quien faltó o no entregó el parcial no reemplaza al parcial con este trabajo. Quien finalmente no logre alcanzar una nota final de 6 o más de promedio, debe rendir la totalidad de la materia.
+
+Trabajo Práctico: Investigación sobre la Integración de Wazuh con Herramientas de Seguridad Open-Source para el Cumplimiento Normativo
+Introducción
+En el contexto de la economía fluctuante de Argentina, las pequeñas y medianas empresas (PyMEs) se enfrentan a una creciente presión para mantenerse competitivas y seguras en el entorno digital. Dada la falta de recursos que muchas de estas organizaciones enfrentan, es fundamental que cuenten con soluciones de ciberseguridad eficaces y accesibles. Aquí es donde las herramientas open-source cobran relevancia, ya que ofrecen capacidades avanzadas sin los costos elevados de soluciones comerciales.
+
+Este trabajo de investigación explorará cómo la integración de herramientas de seguridad open-source, tales como Wazuh, Graylog, Snort, Yara, VirusTotal, MITRE ATT&CK, y el hardware de red MikroTik, puede proporcionar un sistema de monitoreo continuo que permita a las PyMEs no solo proteger sus activos digitales, sino también cumplir con normativas clave a nivel local e internacional, tales como las leyes argentinas, GDPR, CIS Controls, NIST, PCI DSS e ISO 27001.
+
+Es importante resaltar que la implementación de este conjunto de herramientas trabajando de manera sincronizada y mancomunada no solo proporciona seguridad avanzada contra una amplia gama de amenazas, sino que también resulta fundamental para detectar, analizar y responder de manera proactiva a posibles ataques cibernéticos. Entre los ejemplos de amenazas que podrían mitigarse se encuentran ataques de fuerza bruta, intentos de explotación de vulnerabilidades no parcheadas, y malware avanzado como el ransomware.
+
+Cabe destacar que los estudiantes no deberán instalar ni configurar laboratorios, ya que este trabajo está enfocado únicamente en la investigación de la integración y en la elaboración de propuestas de mejora. Se evaluará la calidad técnica y la metodología de investigación empleada.
+
+Objetivo del Trabajo
+El objetivo principal de este trabajo práctico es que los estudiantes comprendan y analicen cómo las herramientas de seguridad open-source pueden ser integradas de manera efectiva para cumplir con diversas normativas de seguridad. Se espera que los estudiantes investiguen y propongan cómo estas soluciones ayudan a una organización a mejorar su seguridad y garantizar el cumplimiento normativo en un entorno de recursos limitados.
+
+Herramientas a Investigar
+Wazuh: La herramienta central del sistema que gestiona el monitoreo de logs, la detección de intrusiones, el cumplimiento normativo, y la gestión de vulnerabilidades.
+
+Graylog: Plataforma de gestión de logs que facilita el análisis y visualización de datos generados por Wazuh y otras fuentes.
+
+Snort (o Suricata): Sistema de detección y prevención de intrusiones (IDS/IPS) que identifica ataques y anomalías en la red.
+
+Yara: Herramienta que permite detectar malware mediante patrones o "rulesets", utilizada para analizar archivos sospechosos.
+
+VirusTotal: Plataforma que analiza archivos y URLs sospechosos utilizando múltiples motores antivirus y sistemas de análisis de comportamiento.
+
+MITRE ATT&CK: Marco de referencia que documenta técnicas y tácticas utilizadas por los atacantes, permitiendo un análisis más detallado y preciso de las amenazas.
+
+MikroTik: Router de red que será monitoreado mediante decoders personalizados en Wazuh, lo que permitirá registrar accesos y cambios en la configuración.
+
+Metodología de Investigación
+Los estudiantes deberán realizar una investigación detallada sobre las siguientes áreas:
+
+Integración: ¿Cómo se integra Wazuh con Graylog, Snort, Yara, VirusTotal, MITRE ATT&CK y los dispositivos MikroTik? Especificar qué configuraciones son necesarias para que las herramientas trabajen de manera sincronizada.
+
+Cumplimiento Normativo: Analizar de qué manera este conjunto de herramientas contribuye al cumplimiento de las normativas de seguridad como GDPR, PCI DSS, NIST, CIS Controls, ISO 27001 y las leyes argentinas. Específicamente, identificar qué aspectos normativos no estarían siendo completamente cubiertos con esta solución unificada.
+
+Propuestas de Mejora: Identificar posibles mejoras técnicas en la integración de estas herramientas, con el fin de optimizar la detección y mitigación de amenazas, así como mejorar el cumplimiento normativo.
+
+Ejemplo Hipotético: Mitigación de Amenaza con Integración Total
+Para ilustrar el impacto de esta integración, consideremos el siguiente caso hipotético:
+
+Una PyME implementa el conjunto de herramientas descrito. Durante un monitoreo rutinario, el sistema de detección de intrusiones Snort detecta un ataque de fuerza bruta contra uno de los servidores críticos de la empresa. Wazuh recibe la alerta de Snort y la correlaciona con registros de accesos provenientes de los routers MikroTik, lo que revela que el atacante también está intentando modificar las configuraciones del firewall de manera no autorizada.
+
+Los logs de acceso se envían a Graylog, donde se visualizan anomalías de red, mientras que Yara analiza un archivo descargado durante el ataque, identificándolo como malware desconocido. Este archivo es enviado a VirusTotal, donde se confirma que contiene un ransomware en etapa temprana.
+
+Utilizando el marco de MITRE ATT&CK, el equipo de seguridad puede mapear las tácticas y técnicas utilizadas por el atacante, lo que les permite planificar una respuesta coordinada para mitigar el ataque antes de que el ransomware sea activado, salvaguardando los datos y la integridad de la red.
+
+Cumplimiento Normativo: Lo que se Cumple y lo que No
+Al integrar estas herramientas, se podrían cumplir muchos de los requisitos clave de las normativas de seguridad:
+
+GDPR: Monitoreo continuo y la detección de accesos no autorizados a datos personales. El uso de logs centralizados permite auditar el acceso a datos sensibles, cumpliendo con las exigencias de la regulación en cuanto a la privacidad de los datos.
+
+PCI DSS: Wazuh y Snort permiten proteger sistemas de pago contra ataques de red y malware. Sin embargo, el cumplimiento completo de PCI DSS también exige procedimientos adicionales como el encriptado de datos que no sería cubierto solo con estas herramientas.
+
+ISO 27001: La gestión de incidentes y la detección de intrusiones ayudan a cumplir con controles de seguridad de la información, aunque aspectos como la gestión de riesgos y el ciclo completo de mejora continua requieren un enfoque más amplio.
+
+CIS Controls: Las herramientas propuestas cubren varios controles, como la protección contra malware y el monitoreo de accesos. Sin embargo, algunos controles relacionados con la formación del personal y la gobernanza de TI no son tratados con esta solución.
+
+NIST: Las capacidades de respuesta ante incidentes y la gestión de vulnerabilidades ayudan a cumplir con varios apartados del marco NIST, aunque la parte de respuesta proactiva y automatizada podría mejorarse.
+
+Leyes Argentinas: Cumplirían parcialmente con la Ley 25.326 (Protección de Datos Personales), en especial en términos de monitoreo y auditoría de acceso a datos sensibles, pero se necesitarían políticas internas robustas para asegurar el cumplimiento total.
+
+Conclusión
+Este trabajo busca que los estudiantes profundicen en la investigación y análisis de cómo las herramientas open-source pueden integrarse para crear un sistema de monitoreo y protección eficaz. Se espera que los estudiantes comprendan que si bien esta solución aborda muchos aspectos importantes de las normativas de seguridad, existen áreas que requieren atención adicional para un cumplimiento total. Se valorará la calidad técnica de la investigación y las propuestas de mejora presentadas.
+
+Instrucciones para la Entrega:
+Formato: Normas APA, incluyendo carátula, índice, cuerpo, conclusiones grupales y referencias.
+Extensión: Mínimo 25 páginas.
+Extensión: Máximo 40 páginas.
+Fecha de Entrega: 14/11.
+Evaluación: Se evaluará la calidad técnica de la investigación, precisión en el análisis normativo y la propuesta de mejoras. necesito sacar nota de 8 o mas para poder alcanzar el promedio y promocionar la materia.

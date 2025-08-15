@@ -1,0 +1,71 @@
+Ejercicio Didáctico: Implementación de ISO 27000 e ISO 27001 en una Empresa Ficticia en Argentina
+Contexto
+La empresa ficticia "TecnoData S.A." es una compañía de desarrollo de software y servicios de consultoría en IT ubicada en Buenos Aires, Argentina. La empresa cuenta con 150 empleados y ofrece servicios tanto a nivel local como internacional. Debido a la creciente demanda de clientes internacionales y la necesidad de proteger la información sensible, la empresa ha decidido certificar sus procesos de seguridad de la información bajo las Normas ISO 27000 e ISO 27001.
+
+
+
+TecnoData S.A. posee una infraestructura híbrida compuesta de:
+
+20 computadoras de escritorio para el personal administrativo y de contabilidad.
+80 notebooks utilizadas por desarrolladores y consultores.
+30 servidores físicos en un datacenter propio para la gestión de proyectos internos y almacenamiento de información sensible.
+Infraestructura cloud en AWS para alojar aplicaciones web y servicios SaaS para sus clientes.
+Sistemas de correo electrónico y comunicación interna basados en G Suite.
+Firewalls y soluciones de seguridad perimetral para proteger su infraestructura local y la conexión con la nube.
+Situaciones Hipotéticas de Seguridad
+A lo largo de los últimos años, TecnoData S.A. ha enfrentado varios incidentes de seguridad y desafíos de cumplimiento que han motivado la implementación de un Sistema de Gestión de Seguridad de la Información (SGSI) basado en la Norma ISO 27001:
+
+Incidente de Phishing: Un empleado del área de ventas cayó en un ataque de phishing que comprometió información confidencial de clientes y contratos. Este incidente demostró la necesidad de implementar controles para proteger la información personal y contractual.
+
+Acceso No Autorizado a Servidores: Un ex empleado retuvo sus credenciales de acceso y utilizó una VPN para acceder a servidores críticos, lo que resultó en la filtración de información confidencial. La empresa no tenía un procedimiento formal de revocación de accesos tras la desvinculación de empleados.
+
+Pérdida de Datos en la Nube: Un error de configuración en los permisos de acceso a la infraestructura en la nube permitió que datos críticos de clientes fueran visibles a cualquier persona con el enlace adecuado. Este incidente resaltó la importancia de tener un control riguroso sobre la gestión de permisos y el acceso a datos.
+
+Fallas en la Gestión de Backups: Un corte de energía prolongado en el datacenter afectó a varios servidores físicos, causando la pérdida de información crítica. La empresa no tenía una política clara de backups ni un plan de continuidad del negocio bien definido.
+
+Uso No Autorizado de Software: Se detectó que varios desarrolladores utilizaban software no autorizado y versiones desactualizadas de herramientas, exponiendo la red a vulnerabilidades y posibles ataques.
+
+Conformidad con GDPR y Legislación Local: Con la expansión internacional, TecnoData S.A. necesita cumplir con regulaciones como el GDPR, así como con la Ley de Protección de Datos Personales de Argentina. Esto implica implementar políticas claras de protección de datos y privacidad.
+
+Simulacro de Ransomware: Durante un ejercicio de simulación de ciberseguridad, la empresa descubrió que no tenía un protocolo eficaz para manejar un ataque de ransomware, dejando potencialmente expuesta toda la información de clientes.
+
+Acceso a Aplicaciones SaaS sin Doble Factor de Autenticación (2FA): Algunas aplicaciones críticas en la nube utilizadas por los desarrolladores no tienen habilitada la autenticación de doble factor, representando un riesgo significativo.
+
+Fuga de Información por USBs no Controlados: Un incidente donde un empleado usó un dispositivo USB no autorizado para transferir información confidencial a un dispositivo personal sin cifrado, lo que resultó en una fuga de datos.
+
+Revisión Inadecuada de Contratos con Terceros: La empresa detectó que varios contratos con proveedores de tecnología no incluían cláusulas adecuadas de seguridad de la información, exponiéndola a riesgos legales y de ciberseguridad.
+
+Ejercicio Propuesto
+Como consultor de ciberseguridad, tu tarea es ayudar a TecnoData S.A. a implementar un Sistema de Gestión de Seguridad de la Información (SGSI) según las Normas ISO 27000 e ISO 27001.
+
+Evaluación de Riesgos: Identifica al menos cinco riesgos críticos para la seguridad de la información en TecnoData S.A. y propone controles específicos del Anexo A de la Norma ISO 27001 para mitigar esos riesgos.
+
+Política de Seguridad de la Información: Redacta una política de seguridad de la información alineada con la ISO 27001, teniendo en cuenta los activos, procesos y datos de TecnoData S.A.
+
+Análisis de Cumplimiento: Realiza un análisis de cumplimiento para GDPR y la Ley de Protección de Datos Personales de Argentina. ¿Qué acciones específicas debe tomar la empresa para cumplir con estas regulaciones?
+
+Plan de Continuidad del Negocio (BCP): Diseña un Plan de Continuidad del Negocio y un Plan de Recuperación de Desastres (DRP) que cubra tanto los servidores físicos como la infraestructura en la nube.
+
+Capacitación y Concienciación: Desarrolla un programa de capacitación para empleados que cubra phishing, el uso seguro de dispositivos USB, manejo de contraseñas, y uso adecuado de software.
+
+Gestión de Incidentes: Crea un protocolo de gestión de incidentes que incluya las fases de detección, contención, erradicación, recuperación y aprendizaje.
+
+Revisión de Proveedores: Propón un procedimiento para evaluar la seguridad de los proveedores y gestionar contratos con cláusulas específicas de seguridad de la información.
+
+Implementación de 2FA: Diseña un plan para implementar 2FA en todas las aplicaciones críticas de TecnoData S.A.
+
+Controles de Acceso y Gestión de Identidades: Revisa la política actual de acceso y gestiona identidades y propone mejoras alineadas con ISO 27001.
+
+Gestión de Backups: Proporciona una política detallada de gestión de backups, incluyendo frecuencia, ubicación, cifrado y pruebas periódicas de restauración.
+
+Preguntas de Reflexión para los Estudiantes
+¿Qué diferencias fundamentales existen entre la ISO 27000 e ISO 27001?
+¿Por qué es importante realizar una evaluación de riesgos antes de implementar un SGSI?
+¿Cómo se alinean los controles de seguridad de ISO 27001 con los requisitos legales y regulatorios?
+¿Qué desafíos puede enfrentar TecnoData S.A. al implementar la autenticación de doble factor en todas sus aplicaciones críticas?
+¿Qué beneficios obtiene una empresa al capacitar a su personal en la prevención de ataques de phishing?
+¿Cómo debería manejar TecnoData S.A. la gestión de acceso de ex empleados?
+¿Por qué es crítico incluir cláusulas específicas de seguridad en los contratos con terceros?
+¿Cómo pueden las soluciones cloud influir en la implementación del SGSI?
+¿Qué acciones deberían tomarse tras la identificación de un incidente de fuga de datos?
+¿Cómo se puede asegurar la eficacia de un Plan de Recuperación de Desastres?

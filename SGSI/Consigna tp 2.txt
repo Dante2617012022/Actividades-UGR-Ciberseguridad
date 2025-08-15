@@ -1,0 +1,134 @@
+Trabajo práctico N°2
+
+El trabajo práctico de investigación consta de buscar información sobre los requisitos para implementar PCI-DSS. Los requisitos son 11, los cuales se exponen a continuación:
+
+Requisito 1: Instalar y mantener una configuración de cortafuegos para proteger los datos de los titulares de tarjetas
+1.1. Establecer y mantener estándares de configuración de cortafuegos.
+
+Definir roles y responsabilidades para la administración de cortafuegos.
+Documentar la justificación de cada regla de cortafuegos.
+Revisar las reglas de cortafuegos al menos cada seis meses.
+1.2. Configurar cortafuegos para restringir conexiones no autorizadas entre redes no confiables y el entorno de datos de los titulares de tarjetas (CDE).
+
+Asegurarse de que los cortafuegos estén implementados en todos los puntos donde se encuentre el CDE.
+Bloquear todo el tráfico innecesario y permitir solo lo que es esencial.
+1.3. Prohibir el acceso directo desde la red pública a cualquier componente del sistema en la red interna.
+
+Implementar políticas de denegación predeterminadas.
+Configurar el cortafuegos para evitar accesos no autorizados desde la red externa.
+1.4. Instalar cortafuegos personales en dispositivos portátiles y computadoras utilizadas por empleados que se conectan remotamente al entorno de datos de los titulares de tarjetas.
+
+Requisito 2: No usar configuraciones predeterminadas proporcionadas por los proveedores para los sistemas y otros parámetros de seguridad
+2.1. Cambiar las contraseñas predeterminadas y otros parámetros de seguridad antes de implementar un sistema en el entorno de producción.
+
+2.2. Desarrollar configuraciones seguras para todos los componentes del sistema y aplicarlas para eliminar vulnerabilidades conocidas.
+
+Deshabilitar funciones y servicios innecesarios.
+Configurar el sistema operativo para proporcionar solo los servicios esenciales.
+2.3. Cifrar todas las contraseñas de administración y otros datos confidenciales que se transmitan a través de redes abiertas.
+
+2.4. Mantener un inventario de todos los componentes de hardware y software dentro del entorno de datos de los titulares de tarjetas.
+
+2.5. Implementar políticas y procedimientos de seguridad para asegurar el uso seguro de todos los dispositivos utilizados para procesar pagos.
+
+2.6. Asegurar que los proveedores de servicios desarrollen y mantengan estándares de configuración seguros para sus sistemas y equipos.
+
+Requisito 3: Proteger los datos almacenados de los titulares de tarjetas
+3.1. Minimizar el almacenamiento de datos sensibles de los titulares de tarjetas y eliminar los datos cuando ya no sean necesarios.
+
+3.2. No almacenar datos sensibles de autenticación después de la autorización.
+
+3.3. Enmascarar los datos del PAN (Primary Account Number) al mostrarlos para que solo el personal autorizado pueda verlos completos.
+
+3.4. Cifrar los datos del PAN almacenados, utilizando algoritmos de cifrado fuertes y estándares de gestión de claves.
+
+3.5. Proteger las claves criptográficas almacenadas para garantizar que se puedan acceder de manera segura.
+
+3.6. Implementar políticas y procedimientos de gestión de claves criptográficas, que incluyan generación, distribución, almacenamiento y destrucción segura.
+
+Requisito 4: Cifrar la transmisión de datos del titular de la tarjeta a través de redes abiertas y públicas
+4.1. Utilizar fuertes medidas de cifrado y protocolos de seguridad (como TLS) para proteger los datos del titular de la tarjeta durante la transmisión a través de redes abiertas y públicas.
+
+4.2. No enviar datos sensibles de autenticación sin cifrar por ningún tipo de canal de comunicación, incluyendo emails, mensajería instantánea, etc.
+
+Requisito 5: Proteger todos los sistemas contra malware y actualizar regularmente los programas o software antivirus
+5.1. Implementar software antivirus en todos los sistemas comúnmente afectados por malware.
+
+5.2. Asegurarse de que el software antivirus esté actualizado, ejecutando análisis regulares y configurado para generar alertas.
+
+5.3. Asegurarse de que todas las soluciones de seguridad antivirus se mantengan y administren centralmente.
+
+5.4. Implementar procesos de detección y respuesta a incidentes de malware para proteger el entorno.
+
+Requisito 6: Desarrollar y mantener sistemas y aplicaciones seguros
+6.1. Implementar un proceso para identificar y clasificar las vulnerabilidades de seguridad y aplicar parches críticos en el plazo de un mes.
+
+6.2. Establecer un programa para desarrollar y mantener sistemas y aplicaciones seguros, incluyendo la implementación de prácticas seguras de codificación.
+
+6.3. Desarrollar un proceso para probar y revisar todas las aplicaciones desarrolladas internamente para detectar vulnerabilidades.
+
+6.4. Aplicar un ciclo de vida de desarrollo seguro (SDLC) para todos los desarrollos internos y externos de software.
+
+6.5. Desplegar y mantener aplicaciones web seguras, revisando el código para identificar y corregir vulnerabilidades.
+
+6.6. Implementar procesos de monitoreo y alerta para detectar y responder a las amenazas de seguridad en tiempo real.
+
+Requisito 7: Restringir el acceso a los datos del titular de la tarjeta según la necesidad de conocer
+7.1. Definir y documentar los roles y permisos de acceso necesarios según las funciones laborales y las responsabilidades.
+
+7.2. Implementar un control de acceso estricto para garantizar que solo las personas autorizadas tengan acceso a los datos del titular de la tarjeta.
+
+7.3. Revisar y actualizar las políticas de acceso regularmente, al menos una vez al año.
+
+Requisito 8: Identificar y autenticar el acceso a los componentes del sistema
+8.1. Asignar un identificador único a cada persona con acceso al entorno de datos de los titulares de tarjetas.
+
+8.2. Implementar autenticación de dos factores para todos los accesos remotos a la red.
+
+8.3. Implementar políticas de complejidad de contraseñas para garantizar que todas las contraseñas sean seguras.
+
+8.4. Asegurarse de que todos los accesos al sistema sean monitoreados y auditados para identificar posibles actividades no autorizadas.
+
+Requisito 9: Restringir el acceso físico a los datos de los titulares de tarjetas
+9.1. Implementar controles físicos para restringir el acceso a los entornos que contienen datos de titulares de tarjetas.
+
+9.2. Mantener un registro de todas las entradas y salidas del entorno seguro, identificando claramente a todas las personas con acceso.
+
+9.3. Destruir los datos confidenciales de manera segura cuando ya no sean necesarios, utilizando métodos como trituración o eliminación de medios electrónicos.
+
+Requisito 10: Rastrear y monitorear todos los accesos a los recursos de la red y a los datos de los titulares de tarjetas
+10.1. Implementar procesos de monitoreo continuo para registrar todas las actividades en los sistemas que contengan datos del titular de la tarjeta.
+
+10.2. Asegurarse de que los registros de auditoría sean revisados regularmente para identificar cualquier actividad sospechosa.
+
+10.3. Conservar los registros de auditoría durante al menos un año, con acceso inmediato a los últimos tres meses.
+
+10.4. Sincronizar los relojes de todos los componentes críticos del sistema para asegurar la exactitud de los registros de auditoría.
+
+Requisito 11: Probar con regularidad los sistemas y procesos de seguridad
+11.1. Implementar un programa de escaneo de vulnerabilidades para identificar y mitigar las debilidades de seguridad.
+
+11.2. Realizar pruebas de penetración internas y externas al menos una vez al año y después de cualquier cambio significativo en la infraestructura o aplicaciones.
+
+11.3. Implementar procesos de detección de intrusos y pruebas para asegurar la integridad de todos los sistemas críticos.
+
+11.4. Monitorear y probar la seguridad física de los entornos de datos de los titulares de tarjetas.
+
+Requisito 12: Mantener una política que aborde la seguridad de la información para todos los empleados y contratistas
+12.1. Desarrollar, mantener y difundir una política de seguridad de la información a todo el personal.
+
+12.2. Establecer un proceso de gestión de riesgos de seguridad para identificar y mitigar posibles amenazas.
+
+12.3. Implementar programas de concienciación y formación sobre seguridad para todos los empleados.
+
+12.4. Asegurar que los proveedores de servicios cumplan con los requisitos de PCI-DSS y documentar los acuerdos de responsabilidad.
+
+12.5. Realizar revisiones anuales de las políticas de seguridad de la información y actualizar según sea necesario.
+
+12.6. Establecer un proceso de respuesta a incidentes para tratar con eficacia cualquier violación de seguridad.
+
+Elija uno de los 12 requisitos y profundice sobre este en un trabajo de máximo 5 carillas. Por ejemplo requisito 11.2
+"11.2. Realizar pruebas de penetración internas y externas al menos una vez al año y después de cualquier cambio significativo en la infraestructura o aplicaciones."
+
+El trabajo debe contener obligatoriamente la siguiente estructura: Carátula, índice, cuerpo, conclusiones y bibliografía.
+
