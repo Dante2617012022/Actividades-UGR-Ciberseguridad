@@ -184,21 +184,6 @@ Cada informe documenta el \*\*proceso completo\*\*:
 
 
 
----
-
-
-
-\## 📬 Contacto
-
-\- \*\*LinkedIn:\*\* \[Tu perfil aquí]  
-
-\- \*\*Email:\*\* \dantebalbuenaatar@gmail.com  
-
-\- \*\*GitHub:\*\* \Dante2617012022 
-
-\- \*\*WEB personal:\*\* \[Tu WEB aquí]
-
----
 
 
 

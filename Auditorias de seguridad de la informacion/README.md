@@ -156,22 +156,7 @@ Auditorías semestrales para mantener conformidad.
 
 
 
-📬 Contacto
-
 Autor: Dante Gabriel Balbuena Atar
-
-
-
-LinkedIn: \[Perfil aquí]
-
-
-
-Email: \[Correo profesional]
-
-
-
-GitHub: \[Usuario]
-
 
 
 🔐 "La seguridad no es un producto, sino un proceso continuo de mejora."

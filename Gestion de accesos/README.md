@@ -180,18 +180,6 @@ Los controles basados en roles reducen riesgos de accesos no autorizados.
 
 
 
-📬 Contacto
-
-LinkedIn: \[Tu perfil aquí]
-
-
-
-Email: \[Tu correo profesional]
-
-
-
-GitHub: \[Tu usuario]
-
 
 
 🔐 "La gestión de accesos no es solo tecnología; es la primera línea de defensa en ciberseguridad."

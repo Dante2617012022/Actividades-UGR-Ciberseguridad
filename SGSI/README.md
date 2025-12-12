@@ -94,19 +94,6 @@ No se incluyen datos sensibles ni información confidencial de ninguna organizac
 
 
 
----
 
-
-
-\## 📧 Contacto
-
-
-\- \*\*Email:\*\* \dantebalbuenaatar@gmail.com  
-
-\*\*LinkedIn:\*\* \[Tu enlace aquí]  
-
-\*\*GitHub:\*\* \Dante2617012022
-
-\*\*WEB personal:\*\* \[Tu enlace aquí]
 
 

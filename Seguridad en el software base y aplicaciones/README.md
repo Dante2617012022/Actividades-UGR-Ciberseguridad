@@ -100,21 +100,5 @@ Se aplicaron \*\*herramientas de diagnóstico, análisis y verificación\*\* par
 
 
 
----
-
-
-
-\## 📬 Contacto
-
-\- \*\*LinkedIn:\*\* \[Tu perfil aquí]  
-
-\- \*\*Email:\*\* \[Tu correo profesional]  
-
-\- \*\*GitHub:\*\* \[Tu usuario]  
-
-
-
----
-
 
 

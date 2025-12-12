@@ -138,18 +138,6 @@ Comunicación: Protocolos claros para emergencias y coordinación interinstituci
 
 
 
-📬 Contacto
-
-LinkedIn: \[Tu perfil aquí]
-
-
-
-Email: \[Tu correo profesional]
-
-
-
-GitHub: \[Tu usuario]
-
 
 
 ✨ "La continuidad no es un plan, es una cultura organizacional."

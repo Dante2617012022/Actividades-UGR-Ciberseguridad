@@ -152,39 +152,6 @@ Pruebas periódicas de resistencia ante ataques DDoS.
 
 
 
-📬 Contacto
-
-Integrantes:
-
-
-
-Federico Kidonakis
-
-
-
-Mateo Frutos
-
-
-
-Oscar Ferreyra
-
-
-
-Felipe Moreno
-
-
-
-Dante Balbuena
-
-
-
-LinkedIn: \[Perfiles individuales]
-
-
-
-Email: \[Correos institucionales]
-
-
 
 🔐 "La gestión proactiva de riesgos no solo protege los activos, sino también la confianza de millones de usuarios."
 

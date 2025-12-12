@@ -1,6 +1,5 @@
 Tecnicatura Universitaria en Ciberseguridad – UGR
 
-Grupo 5: Balbuena, López, Moreno, Villarreal
 
 
 
@@ -154,31 +153,6 @@ Mecanismos de reparación accesibles (Art. 12).
 
 \*"Redacta una fundamentación para las modificaciones en los artículos 1-4, integrando ciberseguridad y estándares internacionales."\*
 
-
-
-📬 Contacto
-
-Integrantes:
-
-
-
-Dante Balbuena
-
-
-
-Victoria López
-
-
-
-Valentín Moreno
-
-
-
-Ángela Villarreal
-
-
-
-Docentes: Dra. Josefina Riva Posse, E. Damián Bes
 
 
 
