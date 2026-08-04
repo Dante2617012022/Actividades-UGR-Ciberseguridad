@@ -1,189 +1,109 @@
-\# Trabajos Prácticos - Tratamiento de Vulnerabilidades  
+# Tratamiento de Vulnerabilidades - Laboratorios autorizados
 
-\*\*Tecnicatura Universitaria en Ciberseguridad – UGR\*\*  
+Trabajos prácticos realizados por **Dante Gabriel Balbuena Atar** durante la Tecnicatura Universitaria en Ciberseguridad de la Universidad del Gran Rosario.
 
-Autor: \*\*Dante Gabriel Balbuena Atar\*\*  
+La materia abordó identificación, validación, explotación controlada, análisis de impacto y remediación sobre aplicaciones intencionalmente vulnerables y CTF educativos.
 
+> Todas las pruebas se realizaron en entornos de laboratorio autorizados. Este material no habilita pruebas sobre sistemas de terceros.
 
+## Metodología aplicada
 
----
+1. Reconocimiento de la aplicación y superficie expuesta.
+2. Enumeración de rutas, parámetros, tecnologías y controles.
+3. Identificación de vulnerabilidades.
+4. Validación manual con el menor impacto necesario.
+5. Encadenamiento de hallazgos cuando correspondía.
+6. Registro de evidencias y resultados negativos.
+7. Análisis de impacto.
+8. Recomendaciones de mitigación.
 
+## Trabajos
 
+### TP1 - DVWA
 
-\## 📌 Descripción  
+Laboratorio introductorio de vulnerabilidades web:
 
-Este repositorio recopila mis trabajos prácticos realizados durante la cursada de la materia \*\*Tratamiento de Vulnerabilidades\*\*, donde se abordaron entornos intencionalmente vulnerables para poner en práctica técnicas de hacking ético y análisis de seguridad ofensiva.  
+- fuerza bruta en entorno controlado;
+- command injection;
+- CSRF;
+- inclusión local de archivos;
+- carga insegura de archivos;
+- SQL Injection;
+- XSS DOM, reflejado y almacenado;
+- CSP y redirecciones inseguras.
 
+[Ver informe académico](TP%201%20DVWA.pdf)
 
+### TP2 - Mutillidae II
 
-Cada informe documenta el \*\*proceso completo\*\*:  
+Evaluación de una aplicación web vulnerable con múltiples técnicas:
 
-\- Reconocimiento de vulnerabilidades  
+- SQL Injection en distintos contextos;
+- autenticación y cookies inseguras;
+- command injection;
+- carga de archivos y ejecución controlada;
+- log poisoning combinado con LFI;
+- IDOR;
+- clickjacking y cabeceras faltantes.
 
-\- Explotación paso a paso  
+[Ver informe académico](TP%202%20mutillidae.pdf)
 
-\- Evidencias con capturas de pantalla  
+### TP3 - Panel Django vulnerable
 
-\- Payloads utilizados  
+Resolución de desafíos de seguridad sobre una aplicación Django preparada para laboratorio:
 
-\- Conclusiones y medidas de mitigación  
+- XSS;
+- CSRF;
+- IDOR;
+- open redirect;
+- manipulación de cookies;
+- validación de flags y cuestionario técnico.
 
+[Ver informe académico](TP%203%20Django.pdf)
 
+### TP4 - bWAPP
 
-> ⚠️ \*\*Aviso ético:\*\* Todos los ejercicios fueron realizados en entornos de laboratorio o CTFs educativos con autorización. No se realizaron pruebas sobre sistemas reales sin consentimiento.
+Análisis y encadenamiento de vulnerabilidades:
 
+- bypass de controles de interfaz;
+- command injection y ejecución limitada;
+- SQL Injection almacenada y por búsqueda;
+- log poisoning y LFI;
+- HTML injection;
+- carga insegura de archivos;
+- XSS almacenado;
+- exposición de sesión en laboratorio.
 
+[Ver informe académico](TP%204%20BWAPP.pdf)
 
----
+### TP5 - CTF DDLR
 
+Ejercicio integrador de auditoría web:
 
+- SQL Injection;
+- acceso no autorizado a información de laboratorio;
+- carga insegura de archivos;
+- Local File Inclusion;
+- revisión de cookies;
+- ejecución controlada y shell limitada;
+- recomendaciones de remediación.
 
-\## 📂 Contenido del repositorio
+[Ver informe académico](TP%205%20ctf%20ddlr.pdf)
 
+## Competencias demostradas
 
+- Pentesting web junior en laboratorios.
+- Conocimiento práctico de OWASP Top 10.
+- Validación manual de SQLi, XSS, CSRF, LFI, IDOR y command injection.
+- Encadenamiento de vulnerabilidades.
+- Uso académico de Burp Suite, Nmap, cURL, Netcat, Hydra y Docker.
+- Análisis de impacto y riesgo residual.
+- Elaboración de documentación técnica con evidencias y mitigaciones.
 
-\### \*\*TP1 – DVWA (Damn Vulnerable Web Application)\*\*
+## Presentación profesional
 
-\- Fuerza bruta con Hydra  
+Los informes completos conservan el formato original de entrega. Para una lectura ejecutiva y sanitizada, consultar los [casos de estudio de Hacking Ético](../hacking-etico/README.md) y la [plantilla de reporte](../metodologia/plantilla-reporte-pentest.md).
 
-\- Command Injection  
+## Alcance ético
 
-\- CSRF (GET) con Iframe  
-
-\- File Inclusion (LFI)  
-
-\- File Upload + LFI + Shell remota  
-
-\- SQL Injection (UNION SELECT)  
-
-\- XSS (DOM-based, Reflected, Stored)  
-
-\- Bypass de CSP  
-
-\- JavaScript Attacks  
-
-\- Open Redirect  
-
-
-
-📄 \[Ver informe completo](TP%201%20DVWA.pdf)  
-
-
-
----
-
-
-
-\### \*\*TP2 – Mutillidae II\*\*
-
-\- SQL Injection (Login Bypass, INSERT, extractvalue, UNION SELECT, Time-Based)  
-
-\- Manipulación de cookies (Escalada de privilegios)  
-
-\- Command Injection + Webshell + Reverse Shell  
-
-\- Log Poisoning + RCE via LFI  
-
-\- IDOR  
-
-\- LFI desde Select manipulado  
-
-\- Falta de cabeceras de seguridad + Clickjacking  
-
-
-
-📄 \[Ver informe completo](TP%202%20mutillidae.pdf)  
-
-
-
----
-
-
-
-\### \*\*TP3 – Panel Django Vulnerable\*\*
-
-\- Captura de 11 flags mediante explotación de vulnerabilidades:  
-
-&nbsp; - XSS, CSRF, IDOR, Open Redirect, manipulación de cookies, etc.  
-
-\- Resolución de quizz final del entorno.  
-
-
-
-📄 \[Ver informe completo](TP%203%20Django.pdf)  
-
-
-
----
-
-
-
-\### \*\*TP4 – bWAPP\*\*
-
-\- CAPTCHA Bypass  
-
-\- OS Command Injection Blind con Reverse Shell  
-
-\- SQL Injection Almacenado vía User-Agent  
-
-\- Log Poisoning + LFI + Mini WebShell interactiva  
-
-\- HTML Injection + Redirección externa  
-
-\- Insecure File Upload + WebShell  
-
-\- Cross-Site Scripting (Stored) + Robo de cookies  
-
-\- SQL Injection (POST/Search) + UNION SELECT  
-
-
-
-📄 \[Ver informe completo](TP%204%20BWAPP.pdf)  
-
-
-
----
-
-
-
-\### \*\*TP5 – CTF DDLR\*\*
-
-\- SQL Injection en parámetro `id`  
-
-\- File Upload inseguro  
-
-\- Local File Inclusion (LFI)  
-
-\- Configuración insegura de cookies  
-
-\- Explotación completa hasta obtener Reverse Shell en servidor remoto.  
-
-
-
-📄 \[Ver informe completo](TP%205%20ctf%20ddlr.pdf)  
-
-
-
----
-
-
-
-\## 🛠️ Habilidades Técnicas Demostradas
-
-\- \*\*Pentesting Web\*\* (OWASP Top 10)  
-
-\- \*\*Explotación de vulnerabilidades\*\*: SQLi, XSS, CSRF, LFI, RFI, Command Injection  
-
-\- \*\*Post-explotación\*\*: Webshells, Reverse Shells, Escalada de privilegios  
-
-\- \*\*Uso de herramientas\*\*: Hydra, Burp Suite, Netcat, cURL, Docker  
-
-\- \*\*Análisis y mitigación\*\*: Recomendaciones de seguridad y buenas prácticas  
-
-\- \*\*Metodología\*\*: Documentación técnica con pasos, payloads y evidencia  
-
-
-
-
-
-
+Consultar [ETHICS_AND_SCOPE.md](../ETHICS_AND_SCOPE.md).
