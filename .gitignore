@@ -1,0 +1,36 @@
+# Secretos y configuración local
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.kdbx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# Datos y capturas que requieren revisión antes de publicar
+*.sqlite
+*.sqlite3
+*.db
+*.pcap
+*.pcapng
+*.har
+
+# Paquetes opacos: conservar fuera del repositorio público
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Archivos temporales y metadatos del sistema
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+*.bak
