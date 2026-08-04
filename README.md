@@ -28,14 +28,14 @@ El contenido reúne análisis, laboratorios y documentación sobre seguridad ofe
 | Gobierno y gestión | Auditoría, riesgos, SGSI, accesos, normativa y continuidad |
 | Cloud y OT | AWS, resiliencia, arquitecturas críticas y separación IT/OT |
 
-## Casos recomendados para revisión
+## Recorrido recomendado
 
 1. [Tratamiento de vulnerabilidades](tratamiento%20de%20vulnerabilidades/README.md): matriz de laboratorios web y CTF autorizados.
-2. [Hacking ético](hacking-etico/README.md): selección curada de ejercicios de explotación, post-explotación y auditoría.
-3. [Auditorías de seguridad de la información](Auditorias%20de%20seguridad%20de%20la%20informacion/): actividades de planificación, evidencias y reporte.
-4. [Evaluación y gestión de riesgos](Evaluacion%20y%20gestion%20de%20riesgos/): identificación, análisis y tratamiento del riesgo.
-5. [Gestión de accesos](Gestion%20de%20accesos/): identidad, autenticación, autorización y mínimo privilegio.
-6. [Plan de continuidad de negocio](plan%20de%20continuidad%20de%20negocio/): análisis de impacto, recuperación y continuidad.
+2. [Hacking ético](hacking-etico/README.md): selección curada de explotación, post-explotación y auditoría.
+3. [Plantilla de reporte de pentest](metodologia/plantilla-reporte-pentest.md): estructura utilizada para documentar alcance, hallazgos, impacto y remediación.
+4. [Alcance ético](ETHICS_AND_SCOPE.md): límites de autorización, privacidad y publicación.
+
+El resto del repositorio conserva los materiales organizados por materia. La portada evita enlazar carpetas históricas hasta completar una normalización de nombres y rutas.
 
 ## Cómo interpretar el material ofensivo
 
