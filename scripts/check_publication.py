@@ -51,12 +51,18 @@ TEXT_SUFFIXES = {
     ".sh",
 }
 
+
+def join_marker(*parts: str) -> str:
+    """Build signatures without storing the complete sensitive marker in this source file."""
+    return "".join(parts)
+
+
 SENSITIVE_MARKERS = {
-    "-----BEGIN PRIVATE KEY-----": "clave privada",
-    "-----BEGIN RSA PRIVATE KEY-----": "clave privada RSA",
-    "-----BEGIN OPENSSH PRIVATE KEY-----": "clave privada OpenSSH",
-    "zoom.us/rec/share": "enlace de grabación de Zoom",
-    "zoom.us/rec/play": "enlace de grabación de Zoom",
+    join_marker("-----BEGIN ", "PRIVATE KEY-----"): "clave privada",
+    join_marker("-----BEGIN ", "RSA ", "PRIVATE KEY-----"): "clave privada RSA",
+    join_marker("-----BEGIN ", "OPENSSH ", "PRIVATE KEY-----"): "clave privada OpenSSH",
+    join_marker("zoom.", "us/rec/", "share"): "enlace de grabación de Zoom",
+    join_marker("zoom.", "us/rec/", "play"): "enlace de grabación de Zoom",
 }
 
 
@@ -109,8 +115,9 @@ def inspect_text(path: Path) -> list[str]:
         return ["archivo con extensión de texto pero contenido no UTF-8"]
 
     findings = []
+    lowered_content = content.lower()
     for marker, description in SENSITIVE_MARKERS.items():
-        if marker.lower() in content.lower():
+        if marker.lower() in lowered_content:
             findings.append(description)
     return findings
 
