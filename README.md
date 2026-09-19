@@ -63,4 +63,4 @@ Todas las pruebas ofensivas se realizaron en CTF, máquinas intencionalmente vul
 ## Autor
 
 **Dante Gabriel Balbuena Atar**  
-Técnico en formación avanzada en Ciberseguridad, con experiencia previa en soporte técnico, telecomunicaciones, gestión de incidentes y documentación operativa.
+Técnico Universitario en Ciberseguridad, graduado en septiembre de 2026 por la Universidad del Gran Rosario, con experiencia previa en soporte técnico, telecomunicaciones, gestión de incidentes y documentación operativa.
