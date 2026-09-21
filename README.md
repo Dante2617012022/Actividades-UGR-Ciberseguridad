@@ -57,10 +57,10 @@ Todas las pruebas ofensivas se realizaron en CTF, máquinas intencionalmente vul
 ## Relación con otros proyectos
 
 - [Portfolio profesional](https://dante2617012022.github.io/portfolio-web/)
-- [Chatbot de pedidos con IA y controles de seguridad](https://github.com/Dante2617012022/chatbot-hamburgueseria-v3)
-- Camdis Commerce Platform: proyecto privado de comercio electrónico seguro, presentado públicamente mediante documentación sanitizada en el portfolio.
+- [ERP Camdis: seguridad e integridad operativa](https://github.com/Dante2617012022/portfolio-web/blob/main/docs/case-studies/camdis-operations-security.md). Caso público de un proyecto privado.
+- [E-commerce Camdis: identidad y seguridad de aplicaciones](https://github.com/Dante2617012022/portfolio-web/blob/main/docs/case-studies/camdis-commerce-security.md). Caso público de un piloto privado.
 
 ## Autor
 
 **Dante Gabriel Balbuena Atar**  
-Técnico en formación avanzada en Ciberseguridad, con experiencia previa en soporte técnico, telecomunicaciones, gestión de incidentes y documentación operativa.
+Técnico Universitario en Ciberseguridad, graduado en septiembre de 2026, con experiencia previa en soporte técnico, telecomunicaciones, gestión de incidentes y documentación operativa.
