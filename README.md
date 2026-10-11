@@ -4,6 +4,12 @@ Repositorio académico de **Dante Gabriel Balbuena Atar** con trabajos realizado
 
 El contenido reúne análisis, laboratorios y documentación sobre seguridad ofensiva y defensiva, gestión de riesgos, continuidad, gobierno, desarrollo seguro, identidad, cloud y entornos OT. Las actividades se presentan como **formación académica y práctica en entornos autorizados**, no como experiencia profesional sobre sistemas de terceros.
 
+## Cómo usar esta evidencia en una evaluación SOC junior
+
+Este repositorio respalda la formación académica. La práctica actual de monitoreo, análisis de alertas y respuesta controlada está en el [Mini-SOC Lab](https://github.com/Dante2617012022/mini-soc-lab).
+
+Para recorrer la formación, elegir un caso de [auditoría web autorizada](hacking-etico/case-studies/authorized-web-assessment.md) o [WordPress y Linux](hacking-etico/case-studies/wordpress-linux-compromise-lab.md), y contrastar hallazgos, impacto y remediación. Los trabajos grupales conservan su autoría original; no se atribuye todo el contenido a una sola persona.
+
 ## Perfil técnico que demuestra el repositorio
 
 - Reconocimiento, enumeración y análisis de vulnerabilidades.
@@ -62,5 +68,5 @@ Todas las pruebas ofensivas se realizaron en CTF, máquinas intencionalmente vul
 
 ## Autor
 
-**Dante Gabriel Balbuena Atar**  
+**Dante Gabriel Balbuena Atar**
 Técnico Universitario en Ciberseguridad, graduado en septiembre de 2026, con experiencia previa en soporte técnico, telecomunicaciones, gestión de incidentes y documentación operativa.
